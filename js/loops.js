@@ -37,7 +37,7 @@ console.log('--------------------------');
 console.log('ATBULAS TEKSTAS');
 console.log('--------------------------');
 
-const tekstas = 'Tekstas skamba atvirksciai';
+const tekstas = 'Žydrūnas';
 const tekstoIlgis = tekstas.length;
 let atbulas = '';
 
@@ -53,20 +53,19 @@ console.log(`Tekstas "${tekstas}" atbulai yra "${atbulas}".`);
 
 console.log('--------------------------');
 
-const pradzia = -200;
-const pabaiga = 500;
-const daliklis = 33
+const pradzia = 0;
+const pabaiga = 11;
+const daliklis = 3
 let beliekanos = 0;
 
 for ( let i=pradzia; i<=pabaiga; i++ ) {
     if (i % daliklis === 0) {
-        beliekanos = beliekanos + 1
-        console.log(i);
-        
+        beliekanos++
+        console.log(i);     
     }
 }
 
+const answer =`Skaičių intervale tarp ${pradzia} ir ${pabaiga}, besidalinančių be liekanos iš ${daliklis} yra ${beliekanos} vienetai.`
 
-
-console.log(`Skaičių intervale tarp ${pradzia} ir ${pabaiga}, besidalinančių be liekanos iš ${daliklis} yra ${beliekanos} vienetai.`);
+console.log(answer);
 
